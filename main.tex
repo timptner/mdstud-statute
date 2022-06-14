@@ -4,256 +4,277 @@
 
 % ------------------ Pakete ------------------
 
-% Schriftart
-\usepackage[T1]{fontenc}
-\usepackage[default]{sourcesanspro}
-
-% deutsche Umlaute
-\usepackage[utf8]{inputenc}
-
-% deutsche Silbentrennung
+% Deutsche Silbentrennung
 \usepackage[ngerman]{babel}
 
-% Euro- & Paragraphenzeichen
+% Bessere Euro- & Paragraphenzeichen
 \usepackage{textcomp}
 
 % Buchstaben für Unterabsätze
 \usepackage{enumerate}
 
+% Stilvolle Brüche
+\usepackage{nicefrac}
+
 % Juristische Paragraphen
-\usepackage[juratotoc,
-			juratocnumberwidth=2.5em,
-			ref=nosentence]
-			{scrjura}
+\usepackage[%
+    clausemark=forceboth,
+    juratotoc,
+	juratocnumberwidth=2.5em,
+	%ref=nosentence,
+]{scrjura}
+
+% Auswählbare Verlinkungen
+\usepackage[hidelinks]{hyperref}
 
 % ------------------ Layout ------------------
 
-\renewcommand*{\titlepagestyle}{empty}
-%\hypersetup{linktoc=all}
+\pagestyle{myheadings}
+
+\useshorthands{'}
+\defineshorthand{'S}{\Sentence\ignorespaces}
+\defineshorthand{'.}{. \Sentence\ignorespaces}
 
 % ------------------ Inhalt ------------------
 
-\title{Satzung}
-\author{Magdeburgs Studierende e. V.}
-\date{20. März 2019}
-
 \begin{document}
-	
-	\maketitle
-	
-	\tableofcontents
-	
-	\newpage
-	
-	\appendix
-	
-	\section{Allgemeines}
-	
-	\begin{contract}
-	
-		\Clause{title={Name und Sitz}}
-		
-		Der Verein führt den Namen „Magdeburgs Studierende”.
-		
-		Der Verein soll in das Vereinsregister eingetragen werden. Ab dem Zeitpunkt der Eintragung führt der Verein den Zusatz „e. V.”.
-		
-		Der Sitz des Vereins ist Magdeburg.
-		
-		\Clause{title={Geschäftsjahr}}
-		
-		Das Geschäftsjahr des Vereins ist das Kalenderjahr.
-		
-		\Clause{title={Zweck des Vereins}}
-		
-		Zweck des Vereins ist die Förderung von Kunst und Kultur in der Studierendenschaft Magdeburg im Sinne der gültigen Abgabenordnung.
-		
-		Der Satzungszweck wird insbesondere durch die Schaffung eines öffentlichen Raums mit kulturellen Veranstaltungen verwirklicht, welcher als Begegnungsstätte für Studierende dienen soll.
-		
-		\Clause{title={Selbstlose Tätigkeit}}
-		
-		Der Verein ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
-		
-		\Clause{title={Mittelverwendung}}
-		
-		Sämtliche Mittel des Vereins dürfen nur für den satzungsmäßigen Zweck verwendet werden.
-		
-		Eine Auszahlung von Zuwendungen oder Gewinnanteilen des Vereins an Mitglieder ist ausgeschlossen.
-		
-		Die Anerkennung der geleisteten Tätigkeiten der Vereinsmitglieder erfolgt durch den Erhalt einer angemessenen Aufwandsentschädigung.
-		
-		\Clause{title={Verbot von Begünstigungen}}
-		
-		Begünstigungen an Personen in Form von Ausgaben oder unverhältnismäßig hoher Vergütungen, die dem Zweck des Vereins fremd sind, sind verboten.
-		
-		\Clause{title={Vereinsordnungen}}
-		
-		Dem Verein ist freigestellt, sich eine Geschäftsordnung auf Grundlage dieser Satzung zu geben. Jene Geschäftsordnung soll die Gesamtheit aller Richtlinien und Regeln, die zum systematischen Arbeitsablauf nötig sind, beinhalten.
-		
-		Des Weiteren wird dem Verein die Entscheidung überlassen, sich eine Finanzordnung auf Grundlage dieser Satzung zu geben. Darin sollen die finanziellen Rahmenbedingungen in entsprechender Ausführlichkeit festgelegt werden.
-	
-	\end{contract}
-	
-	\section{Mitgliedschaft}
-	
-	\begin{contract}
-	
-		\Clause{title={Erwerb der Mitgliedschaft}}
-				
-		Vereinsmitglieder können natürliche volljährige Personen werden, welche zum Zeitpunkt der Bewerbung an einer deutschen Hochschule immatrikuliert sind.
-		\label{p:mitgliedschaft}
-		
-		Die Mitglieder werden in ordentliche Mitglieder, außerordentliche Mitglieder, Ehrenmitglieder sowie Fördermitglieder unterteilt.
-		
-		\begin{enumerate}[\qquad a)]
-			\item Als ordentliche Mitglieder werden Mitglieder bezeichnet, auf welche \ref{p:mitgliedschaft} zutrifft; ein Stimmrecht besitzen und einen aktiven Dienst im Verein ausüben.
-			\item Als außerordentliche Mitglieder werden Mitglieder bezeichnet, auf welche \ref{p:mitgliedschaft} zutrifft; kein Stimmrecht besitzen und einen aktiven Dienst zur Probe im Verein ausüben.
-			\item Als Ehrenmitglieder werden Mitglieder bezeichnet, welche kein Stimmrecht besitzen und keinen aktiven Dienst im Verein ausüben. Zudem können ausschließlich ordentliche Mitglieder während einer Mitgliederversammlung durch die Mehrheit der abgegebenen Stimmen (einfache Mehrheit) zu Ehrenmitgliedern ernannt werden.
-			\item Als Fördermitglieder werden Mitglieder bezeichnet, welche eine natürliche oder juristische Person darstellen; kein Stimmrecht oder Antragsrecht besitzen und keinen aktiven Dienst im Verein ausüben. Sie haben kein aktives oder passives Wahlrecht.
-		\end{enumerate}
-		
-		Die Mitgliedschaft muss schriftlich oder in Textform per E-Mail bei einem Vorstandsmitglied beantragt werden. Über den Aufnahmeantrag entscheidet der Vorstand durch die Mehrheit der abgegebenen Stimmen (einfache Mehrheit). Gegen eine Ablehnung, die keiner Begründung bedarf, steht der sich bewerbenden Person die Berufung an die Mitgliederversammlung zu, welche dann endgültig durch die Mehrheit der Mitglieder (absolute Mehrheit) entschieden wird.
-		
-		\begin{enumerate}[\qquad a)]
-			\item Die Probezeit der außerordentlichen Mitgliedschaft beträgt mindestens drei Monate. Bei überdurchschnittlichem Engagement kann die Probezeit durch die Mitgliederversammlung im Einzelfall verkürzt werden.
-			\item Die Aufnahme zur ordentlichen Mitgliedschaft wird durch zwei Drittel der Mitglieder (qualifizierte Mehrheit) entschieden. Die Abstimmung erfolgt vorerst mit einer Vorstellung des Bewerbers auf der Mitgliederversammlung.
-		\end{enumerate}
-		
-		\Clause{title={Beendigung der Mitgliedschaft}}
-		
-		Die Mitgliedschaft endet mit Austritt, Ausschluss oder Tod des Mitglieds.
-		
-		Der Austritt aus dem Verein ist jederzeit zulässig. Er ist einem Vorstandsmitglied gegenüber mit einer Frist von einem Monat schriftlich oder in Textform per E-Mail zu erklären.
-		\label{p:austritt}
-		
-		In besonderen Fällen ist ein Austritt aus dem Verein nach \ref{p:austritt} mit einer Frist von unter einem Monat möglich, wenn dies gegenüber dem Vorstand mittels genehmigten Antrags begründet wurde.
-		
-		Ein Ausschluss kann nur aus wichtigem Grund erfolgen. Wichtige Gründe sind insbesondere ein die Vereinsziele schädigendes Verhalten oder die wiederholte Verletzung satzungsmäßiger Pflichten. Über den Ausschluss entscheidet endgültig die Mitgliederversammlung mit zwei Drittel der Mitglieder (qualifizierte Mehrheit).
-		
-		\begin{enumerate}[\qquad a)]
-			\item Das auszuschließende Mitglied erhält die Möglichkeit bei der Mitgliederversammlung seinen Ausschluss anzufechten.
-			\item Das auszuschließende Mitglied hat bei der Entscheidung, aufgrund von Befangenheit, kein Stimmrecht.
-			\item Jedes ordentliche Mitglied kann einen Antrag auf Ausschluss eines laut Satzung definierten Mitglieds stellen.
-		\end{enumerate}
-		
-		\Clause{title={Beiträge}}
-		
-		Von den ordentlichen Mitgliedern, außerordentlichen Mitgliedern sowie Ehrenmitgliedern werden keine Beiträge erhoben.
-		
-		Fördermitglieder zahlen einen beidseitig festgelegten Beitrag über einen beliebig definierbaren Zeitraum.
-		
-		\Clause{title={Spenden}}
-		
-		Spenden an den Verein sind möglich.
-		
-		Durch den Verein erzielte Überschüsse in Form von Gewinnen können als Spende verwendet werden.
-		
-		\Clause{title={Organe des Vereins}}
-		
-		Die Organe des Vereins sind die Mitgliederversammlung und der Vorstand.
-		
-		\Clause{title={Mitgliederversammlung}}
-		
-		Die ordentliche Mitgliederversammlung findet mindestens einmal jährlich statt.
-		
-		Der Vorstand ist zur Einberufung einer außerordentlichen Mitgliederversammlung verpflichtet, wenn das Interesse des Vereins es erfordert oder mindestens ein Drittel aller Vereinsmitglieder dies schriftlich oder in Textform per E-Mail unter Angabe von Gründen gegenüber einem Mitglied des Vorstands verlangt.
-		\label{p:einberufung}
-				
-		Jede ordentliche Mitgliederversammlung wird vom Vorstand unter Einhaltung einer Frist von zwei Wochen in Textform per E-Mail und unter Angabe der Tagesordnung einberufen.
-		
-		Die Tagesordnung ist zu ergänzen, wenn dies ein Mitglied bis spätestens eine Woche vor dem angesetzten Termin in Textform per E-Mail beantragt. Sämtliche Ergänzungen sind zu Beginn der Mitgliederversammlung bekannt zu machen.
-		\label{p:tagesordnung}
-		
-		Eine Ausnahme zu \ref{p:tagesordnung} stellen Anträge über den Ausschluss eines Mitglieds, über die Abwahl des Vorstands, über die Änderung der Satzung und über die Auflösung des Vereins dar. Diese müssen bereits vor dem Versenden der Einladung zur Mitgliederversammlung beim Vorstand eingereicht und auf die Tagesordnung gesetzt werden.
-		
-		Jede Mitgliederversammlung, die unter Einhaltung von \ref{p:einberufung} einberufen wurde, ist bei einer Anwesenheit von mindestens ein Viertel aller stimmberechtigten Vereinsmitglieder beschlussfähig.
-		
-		\begin{enumerate}[\qquad a)]
-			\item Die absolute Zahl anwesender Mitglieder muss mindestens fünf umfassen.
-			\item Beträgt die Mitgliederzahl des Vereins weniger als sieben, so reicht die Anwesenheit des Vorstands für eine Beschlussfähigkeit.
-		\end{enumerate}
-		
-		Die Mitgliederversammlung sollte von einem Vorstandsmitglied geleitet werden.
-		
-		Zu Beginn der Mitgliederversammlung ist eine schriftführende Person von der Versammlungsleitung zu bestimmen.
-		
-		Bei Abstimmungen entscheidet die Mehrheit der abgegebenen Stimmen (einfache Mehrheit), soweit die Satzung nichts anderes bestimmt. Jede Änderung an der Satzung benötigt zwei Drittel der Mitglieder (qualifizierte Mehrheit).
-		
-		Über den Verlauf der Sitzung und sämtliche Beschlüsse wird von der schriftführenden Person ein Protokoll geführt. Das Protokoll ist nach Beendigung der Mitgliederversammlung binnen eines Monats von einem Vorstandsmitglied und der schriftführenden Person zu bestätigen sowie anschließend zu archivieren.
-		
-		Wurden während der Mitgliederversammlung Beschlüsse, Wahlen oder Satzungsänderungen verabschiedet, so ist das Protokoll von allen Vorstandsmitgliedern sowie der schriftführenden Person zu unterzeichnen.
-		
-		\Clause{title={Stimmrecht}}
-		
-		Jedes anwesende ordentliche Mitglied besitzt eine Stimme.
-		
-		Eine Übertragung des Stimmrechts ist ausgeschlossen.
-		
-		Vor jeder Abstimmung hat die Versammlungsleitung den Abstimmungsgegenstand exakt neutral zu bestimmen.
-		
-		Auf Verlangen eines stimmberechtigten Mitglieds ist über einen Beschluss oder eine Wahl geheim abzustimmen.
-		
-		Beschlüsse, über die bereits einmal abgestimmt wurde, können in der laufenden Mitgliederversammlung nicht noch einmal zur Abstimmung gestellt werden.
-		
-		\Clause{title={Vorstand}}
-		
-		Der Vorstand besteht aus drei bis fünf Mitgliedern. Er setzt sich aus dem oder der ersten Vorsitzenden, dem oder der zweiten Vorsitzenden, dem oder der SchatzmeisterIn sowie ggf. deren StellvertreterInnen zusammen.
-		
-		Der Verein wird gerichtlich und außergerichtlich von mindestens zwei Vorstandsmitgliedern gemeinsam vertreten.
-		
-		Jedes Vorstandsmitglied wird von der Mitgliederversammlung auf die Dauer von einem Jahr gewählt.
-		
-		\begin{enumerate}[\qquad a)]
-			\item Jedes Vorstandsmitglied bleibt so lange kommissarisch verantwortlich, bis ein Nachfolger gewählt ist.
-			\item Bei vorzeitigem Rücktritt eines Vorstandsmitglieds ist dies i. d. R. mit einer Frist von drei Monaten bekannt zu machen.
-			\item Die kommissarische Verantwortung eines zurücktretenden Vorstandsmitglieds kann ggf. durch den Vorstand auf ein ordentliches Mitglied bis zur nächsten Mitgliederversammlung oder bis zur Neuwahl des Vorstands übertragen werden.
-		\end{enumerate}
-		
-		Vorstandsmitglieder können nur ordentliche Mitglieder des Vereins werden.
-		
-		Wiederwahl ist zulässig.
-		
-		Bei Beendigung der Mitgliedschaft im Verein endet auch das Amt im Vorstand.
-		
-		\Clause{title={Kassenprüfung}}
-		
-		Die Mitgliederversammlung wählt für die Dauer von einem Jahr zwei KassenprüferInnen.
-		
-		Der oder die KassenprüferIn darf kein Mitglied des Vorstands sein.
-		
-		Zur Wahl als KassenprüferIn können nur ordentliche Mitglieder des Vereins gestellt werden.
-		
-		Wiederwahl ist zulässig.
-		
-		Die KassenprüferInnen haben die Kasse und jegliche Konten des Vereins einschließlich der Bücher und Belege mindestens zweimal im Geschäftsjahr in sinnvollen Abständen sachlich und rechnerisch zu prüfen. Auf der nachfolgenden Mitgliederversammlung ist ein Prüfbericht vorzustellen und anschließend zu archivieren.
-		
-		Bei Beendigung der Mitgliedschaft im Verein endet auch das Amt als KassenprüferIn. Es ist umgehend eine NachfolgerIn zu wählen.
-		
-	\end{contract}
-	
-	\section{Schlussbestimmungen}
-	
-	\begin{contract}
-		
-		\Clause{title={Auflösung des Vereins}}
-		
-		Die Auflösung des Vereins kann nur in einer Mitgliederversammlung beschlossen werden. Der Verein benötigt die Anwesenheit von mindestens drei Viertel aller ordentlichen Vereinsmitglieder um aufgelöst zu werden. Zur Gültigkeit des Beschlusses ist eine Mehrheit von drei Viertel der Mitglieder (qualifizierte Mehrheit) erforderlich.
-		
-		Ist die Versammlung nicht beschlussfähig, kann frühestens nach drei Wochen eine neue Versammlung schriftlich einberufen werden, die in jedem Fall beschlussfähig ist. Bei der Einberufung ist darauf besonders hinzuweisen.
-		
-		Bei Auflösung des Vereins oder Wegfall des bisherigen Zwecks fällt das Vermögen des Vereins an den Studierendenrat der Otto-von-Guericke-Universität Magdeburg (K. d. ö. R.), der es unmittelbar und ausschließlich für gemeinnützige Zwecke zu verwenden hat.
-		
-		\Clause{title={Gleichstellungsklausel}}
-		
-		Jegliche in der Satzung vorgenommenen Funktionsbezeichnungen gelten in der weiblichen und männlichen Form gleichermaßen.
-		
-		\Clause{title={Salvatorische Klausel}}
-		
-		Sollten einzelne Paragraphen oder Absätze von Dritten für rechtlich unwirksam erklärt werden, behalten die restlichen Paragraphen und Absätze der Satzung ihre Rechtsgültigkeit. Beanstandete Formulierungen dürfen vom Vorstand selbstständig korrigiert werden. Die Satzung in korrigierter Form ist umgehend allen Vereinsmitglieder zur Verfügung zu stellen. Der Vorstand hat auf der nächsten ordentlichen Mitgliederversammlung Bericht über sämtliche Anpassungen zu erstatten.
-		
-		\Clause{title={Inkrafttreten}}
-		
-		Die Satzung ist in der vorliegenden Form am 20. März 2019 von der Mitgliederversammlung des Vereins „Magdeburgs Studierende“ beschlossen worden und tritt sofort in Kraft.
-		
-	\end{contract}
-	
+
+\title{Satzung}
+\author{Magdeburgs Studierende e.\,V.}
+\date{20.\,03.\,2019}
+
+\maketitle
+
+\tableofcontents
+
+\clearpage
+
+\appendix
+
+\section{Allgemeines}
+
+\begin{contract}
+
+\Clause{title={Name und Sitz}}
+
+Der Verein führt den Namen \glqq Magdeburgs Studierende\grqq .
+
+'S Der Verein soll in das Vereinsregister eingetragen werden'.
+Ab dem Zeitpunkt der Eintragung führt der Verein den Zusatz \glqq e.~V.\grqq .
+
+Der Sitz des Vereins ist Magdeburg.
+
+\Clause{title={Geschäftsjahr}}
+
+Das Geschäftsjahr des Vereins ist das Kalenderjahr.
+
+\Clause{title={Zweck des Vereins}}
+
+Zweck des Vereins ist die Förderung von Kunst und Kultur in der Studierendenschaft Magdeburg im Sinne der gültigen Abgabenordnung.
+
+Der Satzungszweck wird insbesondere durch die Schaffung eines öffentlichen Raums mit kulturellen Veranstaltungen verwirklicht, welcher als Begegnungsstätte für Studierende dienen soll.
+
+\Clause{title={Selbstlose Tätigkeit}}
+
+Der Verein ist selbstlos tätig; er verfolgt nicht in erster Linie eigenwirtschaftliche Zwecke.
+
+\Clause{title={Mittelverwendung}}
+
+Sämtliche Mittel des Vereins dürfen nur für den satzungsmäßigen Zweck verwendet werden.
+
+Eine Auszahlung von Zuwendungen oder Gewinnanteilen des Vereins an Mitglieder ist ausgeschlossen.
+
+Die Anerkennung der geleisteten Tätigkeiten der Vereinsmitglieder erfolgt durch den Erhalt einer angemessenen Aufwandsentschädigung.
+
+\Clause{title={Verbot von Begünstigungen}}
+
+Begünstigungen an Personen in Form von Ausgaben oder unverhältnismäßig hoher Vergütungen, die dem Zweck des Vereins fremd sind, sind verboten.
+
+\Clause{title={Vereinsordnungen}}
+
+'S Dem Verein ist freigestellt, sich eine Geschäftsordnung auf Grundlage dieser Satzung zu geben'.
+Jene Geschäftsordnung soll die Gesamtheit aller Richtlinien und Regeln, die zum systematischen Arbeitsablauf nötig sind, beinhalten.
+
+'S Des Weiteren wird dem Verein die Entscheidung überlassen, sich eine Finanzordnung auf Grundlage dieser Satzung zu geben'.
+Darin sollen die finanziellen Rahmenbedingungen in entsprechender Ausführlichkeit festgelegt werden.
+
+\end{contract}
+
+\section{Mitgliedschaft}
+
+\begin{contract}
+
+\Clause{title={Erwerb der Mitgliedschaft}}
+
+Vereinsmitglieder können natürliche volljährige Personen werden, welche zum Zeitpunkt der Bewerbung an einer deutschen Hochschule immatrikuliert sind.\label{p:mitgliedschaft}
+
+Die Mitglieder werden in ordentliche Mitglieder, außerordentliche Mitglieder, Ehrenmitglieder sowie Fördermitglieder unterteilt.
+
+\begin{enumerate}[\qquad a)]
+    \item Als ordentliche Mitglieder werden Mitglieder bezeichnet, auf welche \refPar{p:mitgliedschaft} zutrifft; ein Stimmrecht besitzen und einen aktiven Dienst im Verein ausüben.
+	\item Als außerordentliche Mitglieder werden Mitglieder bezeichnet, auf welche \refPar{p:mitgliedschaft} zutrifft; kein Stimmrecht besitzen und einen aktiven Dienst zur Probe im Verein ausüben.
+	\item Als Ehrenmitglieder werden Mitglieder bezeichnet, welche kein Stimmrecht besitzen und keinen aktiven Dienst im Verein ausüben. Zudem können ausschließlich ordentliche Mitglieder während einer Mitgliederversammlung durch die Mehrheit der abgegebenen Stimmen (einfache Mehrheit) zu Ehrenmitgliedern ernannt werden.
+	\item Als Fördermitglieder werden Mitglieder bezeichnet, welche eine natürliche oder juristische Person darstellen; kein Stimmrecht oder Antragsrecht besitzen und keinen aktiven Dienst im Verein ausüben. Sie haben kein aktives oder passives Wahlrecht.
+\end{enumerate}
+
+'S Die Mitgliedschaft muss schriftlich oder in Textform per E-Mail bei einem Vorstandsmitglied beantragt werden'.
+Über den Aufnahmeantrag entscheidet der Vorstand durch die Mehrheit der abgegebenen Stimmen (einfache Mehrheit)'.
+Gegen eine Ablehnung, die keiner Begründung bedarf, steht der sich bewerbenden Person die Berufung an die Mitgliederversammlung zu, welche dann endgültig durch die Mehrheit der Mitglieder (absolute Mehrheit) entschieden wird.
+
+\begin{enumerate}[\qquad a)]
+    \item Die Probezeit der außerordentlichen Mitgliedschaft beträgt mindestens drei Monate. Bei überdurchschnittlichem Engagement kann die Probezeit durch die Mitgliederversammlung im Einzelfall verkürzt werden.
+	\item Die Aufnahme zur ordentlichen Mitgliedschaft wird durch zwei Drittel der Mitglieder (qualifizierte Mehrheit) entschieden. Die Abstimmung erfolgt vorerst mit einer Vorstellung des Bewerbers auf der Mitgliederversammlung.
+\end{enumerate}
+
+\Clause{title={Beendigung der Mitgliedschaft}}
+
+Die Mitgliedschaft endet mit Austritt, Ausschluss oder Tod des Mitglieds.
+
+'S Der Austritt aus dem Verein ist jederzeit zulässig'.
+Er ist einem Vorstandsmitglied gegenüber mit einer Frist von einem Monat schriftlich oder in Textform per E-Mail zu erklären.\label{p:austritt}
+
+In besonderen Fällen ist ein Austritt aus dem Verein nach \refPar{p:austritt} mit einer Frist von unter einem Monat möglich, wenn dies gegenüber dem Vorstand mittels genehmigten Antrags begründet wurde.
+
+'S Ein Ausschluss kann nur aus wichtigem Grund erfolgen'.
+Wichtige Gründe sind insbesondere ein die Vereinsziele schädigendes Verhalten oder die wiederholte Verletzung satzungsmäßiger Pflichten'.
+Über den Ausschluss entscheidet endgültig die Mitgliederversammlung mit zwei Drittel der Mitglieder (qualifizierte Mehrheit).
+
+\begin{enumerate}[\qquad a)]
+    \item Das auszuschließende Mitglied erhält die Möglichkeit bei der Mitgliederversammlung seinen Ausschluss anzufechten.
+    \item Das auszuschließende Mitglied hat bei der Entscheidung, aufgrund von Befangenheit, kein Stimmrecht.
+    \item Jedes ordentliche Mitglied kann einen Antrag auf Ausschluss eines laut Satzung definierten Mitglieds stellen.
+\end{enumerate}
+
+\Clause{title={Beiträge}}
+
+Von den ordentlichen Mitgliedern, außerordentlichen Mitgliedern sowie Ehrenmitgliedern werden keine Beiträge erhoben.
+
+Fördermitglieder zahlen einen beidseitig festgelegten Beitrag über einen beliebig definierbaren Zeitraum.
+
+\Clause{title={Spenden}}
+
+Spenden an den Verein sind möglich.
+
+Durch den Verein erzielte Überschüsse in Form von Gewinnen können als Spende verwendet werden.
+
+\Clause{title={Organe des Vereins}}
+
+Die Organe des Vereins sind die Mitgliederversammlung und der Vorstand.
+
+\Clause{title={Mitgliederversammlung}}
+
+Die ordentliche Mitgliederversammlung findet mindestens einmal jährlich statt.
+
+Der Vorstand ist zur Einberufung einer außerordentlichen Mitgliederversammlung verpflichtet, wenn das Interesse des Vereins es erfordert oder mindestens ein Drittel aller Vereinsmitglieder dies schriftlich oder in Textform per E-Mail unter Angabe von Gründen gegenüber einem Mitglied des Vorstands verlangt.\label{p:einberufung}
+
+Jede ordentliche Mitgliederversammlung wird vom Vorstand unter Einhaltung einer Frist von zwei Wochen in Textform per E-Mail und unter Angabe der Tagesordnung einberufen.
+
+'S Die Tagesordnung ist zu ergänzen, wenn dies ein Mitglied bis spätestens eine Woche vor dem angesetzten Termin in Textform per E-Mail beantragt'.
+Sämtliche Ergänzungen sind zu Beginn der Mitgliederversammlung bekannt zu machen.\label{p:tagesordnung}
+
+'S Eine Ausnahme zu \refPar{p:tagesordnung} stellen Anträge über den Ausschluss eines Mitglieds, über die Abwahl des Vorstands, über die Änderung der Satzung und über die Auflösung des Vereins dar'.
+Diese müssen bereits vor dem Versenden der Einladung zur Mitgliederversammlung beim Vorstand eingereicht und auf die Tagesordnung gesetzt werden.
+
+Jede Mitgliederversammlung, die unter Einhaltung von \refPar{p:einberufung} einberufen wurde, ist bei einer Anwesenheit von mindestens ein Viertel aller stimmberechtigten Vereinsmitglieder beschlussfähig.
+
+\begin{enumerate}[\qquad a)]
+    \item Die absolute Zahl anwesender Mitglieder muss mindestens fünf umfassen.
+    \item Beträgt die Mitgliederzahl des Vereins weniger als sieben, so reicht die Anwesenheit des Vorstands für eine Beschlussfähigkeit.
+\end{enumerate}
+
+Die Mitgliederversammlung sollte von einem Vorstandsmitglied geleitet werden.
+
+Zu Beginn der Mitgliederversammlung ist eine schriftführende Person von der Versammlungsleitung zu bestimmen.
+
+'S Bei Abstimmungen entscheidet die Mehrheit der abgegebenen Stimmen (einfache Mehrheit), soweit die Satzung nichts anderes bestimmt'.
+Jede Änderung an der Satzung benötigt zwei Drittel der Mitglieder (qualifizierte Mehrheit).
+
+'S Über den Verlauf der Sitzung und sämtliche Beschlüsse wird von der schriftführenden Person ein Protokoll geführt'.
+Das Protokoll ist nach Beendigung der Mitgliederversammlung binnen eines Monats von einem Vorstandsmitglied und der schriftführenden Person zu bestätigen sowie anschließend zu archivieren.
+
+Wurden während der Mitgliederversammlung Beschlüsse, Wahlen oder Satzungsänderungen verabschiedet, so ist das Protokoll von allen Vorstandsmitgliedern sowie der schriftführenden Person zu unterzeichnen.
+
+\Clause{title={Stimmrecht}}
+
+Jedes anwesende ordentliche Mitglied besitzt eine Stimme.
+
+Eine Übertragung des Stimmrechts ist ausgeschlossen.
+
+Vor jeder Abstimmung hat die Versammlungsleitung den Abstimmungsgegenstand exakt neutral zu bestimmen.
+
+Auf Verlangen eines stimmberechtigten Mitglieds ist über einen Beschluss oder eine Wahl geheim abzustimmen.
+
+Beschlüsse, über die bereits einmal abgestimmt wurde, können in der laufenden Mitgliederversammlung nicht noch einmal zur Abstimmung gestellt werden.
+
+\Clause{title={Vorstand}}
+
+'S Der Vorstand besteht aus drei bis fünf Mitgliedern'.
+Er setzt sich aus dem oder der ersten Vorsitzenden, dem oder der zweiten Vorsitzenden, dem oder der SchatzmeisterIn sowie ggf. deren StellvertreterInnen zusammen.
+
+Der Verein wird gerichtlich und außergerichtlich von mindestens zwei Vorstandsmitgliedern gemeinsam vertreten.
+
+Jedes Vorstandsmitglied wird von der Mitgliederversammlung auf die Dauer von einem Jahr gewählt.
+
+\begin{enumerate}[\qquad a)]
+    \item Jedes Vorstandsmitglied bleibt so lange kommissarisch verantwortlich, bis ein Nachfolger gewählt ist.
+    \item Bei vorzeitigem Rücktritt eines Vorstandsmitglieds ist dies i.~d.~R. mit einer Frist von drei Monaten bekannt zu machen.
+    \item Die kommissarische Verantwortung eines zurücktretenden Vorstandsmitglieds kann ggf. durch den Vorstand auf ein ordentliches Mitglied bis zur nächsten Mitgliederversammlung oder bis zur Neuwahl des Vorstands übertragen werden.
+\end{enumerate}
+
+Vorstandsmitglieder können nur ordentliche Mitglieder des Vereins werden.
+
+Wiederwahl ist zulässig.
+
+Bei Beendigung der Mitgliedschaft im Verein endet auch das Amt im Vorstand.
+
+\Clause{title={Kassenprüfung}}
+
+Die Mitgliederversammlung wählt für die Dauer von einem Jahr zwei KassenprüferInnen.
+
+Der oder die KassenprüferIn darf kein Mitglied des Vorstands sein.
+
+Zur Wahl als KassenprüferIn können nur ordentliche Mitglieder des Vereins gestellt werden.
+
+Wiederwahl ist zulässig.
+
+'S Die KassenprüferInnen haben die Kasse und jegliche Konten des Vereins einschließlich der Bücher und Belege mindestens zweimal im Geschäftsjahr in sinnvollen Abständen sachlich und rechnerisch zu prüfen'.
+Auf der nachfolgenden Mitgliederversammlung ist ein Prüfbericht vorzustellen und anschließend zu archivieren.
+
+'S Bei Beendigung der Mitgliedschaft im Verein endet auch das Amt als KassenprüferIn'.
+Es ist umgehend eine NachfolgerIn zu wählen.
+
+\end{contract}
+
+\section{Schlussbestimmungen}
+
+\begin{contract}
+
+\Clause{title={Auflösung des Vereins}}
+
+'S Die Auflösung des Vereins kann nur in einer Mitgliederversammlung beschlossen werden'.
+Der Verein benötigt die Anwesenheit von mindestens drei Viertel aller ordentlichen Vereinsmitglieder um aufgelöst zu werden'.
+Zur Gültigkeit des Beschlusses ist eine Mehrheit von drei Viertel der Mitglieder (qualifizierte Mehrheit) erforderlich.
+
+'S Ist die Versammlung nicht beschlussfähig, kann frühestens nach drei Wochen eine neue Versammlung schriftlich einberufen werden, die in jedem Fall beschlussfähig ist'.
+Bei der Einberufung ist darauf besonders hinzuweisen.
+
+Bei Auflösung des Vereins oder Wegfall des bisherigen Zwecks fällt das Vermögen des Vereins an die Studierendenschaft der Otto-von-Guericke-Universität Magdeburg (K.~d.~ö.~R.), die es unmittelbar und ausschließlich für gemeinnützige Zwecke zu verwenden hat.
+
+\Clause{title={Gleichstellungsklausel}}
+
+Jegliche in der Satzung vorgenommenen Funktionsbezeichnungen gelten in der weiblichen und männlichen Form gleichermaßen.
+
+\Clause{title={Salvatorische Klausel}}
+
+'S Sollten einzelne Paragraphen oder Absätze von Dritten für rechtlich unwirksam erklärt werden, behalten die restlichen Paragraphen und Absätze der Satzung ihre Rechtsgültigkeit'.
+Beanstandete Formulierungen dürfen vom Vorstand selbstständig korrigiert werden'.
+Die Satzung in korrigierter Form ist umgehend allen Vereinsmitglieder zur Verfügung zu stellen'.
+Der Vorstand hat auf der nächsten ordentlichen Mitgliederversammlung Bericht über sämtliche Anpassungen zu erstatten.
+
+\Clause{title={Inkrafttreten}}
+
+Die Satzung ist in der vorliegenden Form am 20. März 2019 von der Mitgliederversammlung des Vereins \glqq Magdeburgs Studierende\grqq{} beschlossen worden und tritt sofort in Kraft.
+
+\end{contract}
+
 \end{document}
